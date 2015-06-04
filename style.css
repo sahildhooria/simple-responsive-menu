@@ -136,7 +136,7 @@ input[type=checkbox]:checked ~ #menu{
 	ul li, li a {
 		width: 100%;
 	}
-	/*Display 'mobile menu' link*/
+	/*Display 'mobile menu'*/
 	.mobile-menu {
 		display:block;
 	}
