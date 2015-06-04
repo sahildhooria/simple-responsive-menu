@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Responsive Menu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<label for="mobile-menu" class="mobile-menu">
+    	<span class="srm_icon">
+    		<span class="srm_icon-bar"></span>
+            <span class="srm_icon-bar"></span>
+            <span class="srm_icon-bar"></span>
+        </span>Mobile Menu
+    </label>
+    
+    <input type="checkbox" id="mobile-menu" role="button">
+    <ul id="menu">
+		<li><a href="#">Home</a></li>
+		<li>
+			<a href="#">About &#65516;</a>
+			<ul class="hidden">
+				<li><a href="#">Who We Are</a></li>
+				<li><a href="#">What We Do</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Services &#65516;</a>
+			<ul class="hidden">
+				<li><a href="#">Web Development</a></li>
+				<li><a href="#">Web Designing</a></li>
+				<li><a href="#">Search Engine Optimization</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul><!--#menu-->
+</body>
+</html>

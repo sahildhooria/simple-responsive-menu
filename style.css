@@ -1,0 +1,143 @@
+/**
+* Theme Name: Simple Responsive Menu
+* Description: A Simple responsive mobile menu using only CSS along with media queries.
+* Version: 1.0.0
+* Author: Sahil Dhooria
+* Author URI: http://www.techcricklets.com
+*/
+
+/*List Styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+}
+
+/*Horizontal list*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Menu Link Styling*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+
+/*Background hover color change*/
+li:hover a {
+	background: #429ca4;
+}
+
+/*Dropdown links styling*/
+li:hover ul a {
+	background: #2f3036;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Background hover color change for dropdown links*/
+li:hover ul a:hover {
+	background: #429ca4;
+	color: #fff;
+}
+
+/*Hiding of dropdown list*/
+li ul {
+	display: none;
+}
+
+/*Dropdown vertically*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Avoiding text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Styling of mobile-menu label button and hiding it by default*/
+.mobile-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #429ca4;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Mobile Menu icon*/
+.srm_icon {
+    float: left;
+    margin: 0.188em 0 0 0.438em;
+}
+
+/*Mobile Menu icon styling*/
+.srm_icon-bar {
+    border-radius: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    height: 0.125em;
+    width: 1.125em;
+	background-color: #fff;
+}
+
+/*Mobile Menu icon spacing*/
+.srm_icon-bar + .srm_icon-bar {
+	margin-top: 0.188em;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 767px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'mobile menu' link*/
+	.mobile-menu {
+		display:block;
+	}
+}
