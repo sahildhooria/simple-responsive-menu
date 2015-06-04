@@ -1,2 +1,2 @@
-# simple-responsive-menu
-A simple responsive mobile friendly menu using only CSS with media queries.
+# Simple Responsive Menu
+<em>A simple responsive mobile friendly menu using only CSS with media queries. Simple responsive menu is created to improve the site load as much as possible. It is a very light and easy to implement responsive menu. With Google's latest mobile friendly update this simple reponsive menu is very useful. <em>
